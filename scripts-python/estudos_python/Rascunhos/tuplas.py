@@ -1,0 +1,23 @@
+minha_tupla = {3, 6, 2, "gato", 4.5, False}
+minha_tupla_2 = {4, 7, 2, "cão", 5.5, True}
+print(minha_tupla)
+print(minha_tupla_2)
+print('gato' in minha_tupla)
+print("Retorna um novo conjunto com todos os elementos de ambos os conjuntos", minha_tupla | minha_tupla_2)
+print("Retorna um novo conjunto com apenas os elementos comuns a ambos", minha_tupla & minha_tupla_2)
+print("Retorna um novo conjunto com todos os itens do primeiro conjunto, não do segundo", minha_tupla - minha_tupla_2)
+print("Retorna um novo conjunto com todos os itens do primeiro conjunto, não do segundo", minha_tupla_2 - minha_tupla)
+print("Pergunta se todos os elementos do primeiro conjunto estão no segundo", minha_tupla <= minha_tupla_2)
+print("Retorna um novo conjunto com todos os elementos de ambos os conjuntos", minha_tupla.union(minha_tupla_2))
+print("Retorna um novo conjunto com apenas os elementos comuns a ambos os conjuntos", minha_tupla.intersection(minha_tupla_2))
+print("Retorna um novo conjunto com todos os itens do primeiro conjunto, não no segundo", minha_tupla.difference(minha_tupla_2))
+print("Pergunta se todos os elementos de um conjunto estão no outro", minha_tupla.issubset(minha_tupla_2))
+minha_tupla.add("trovão")
+print("Adiciona um item ao conjunto", minha_tupla)
+minha_tupla.remove("gato")
+print("Remove item do conjunto", minha_tupla)
+print("Remove e retorna pra gente o último item do conjunto", minha_tupla.pop())
+print(minha_tupla)
+minha_tupla.clear()
+print("Remove todos os itens do conjunto", minha_tupla)
+
