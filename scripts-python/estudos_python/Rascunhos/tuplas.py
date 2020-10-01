@@ -22,3 +22,9 @@ Tuplas são mais rápidas que listas. Se você está definindo um conjunto const
 uma tupla em vez de lista.
 Isso torna seu código mais seguro se você "proteger contra gravação" os dados que não precisam ser alterados.''')
 
+print('''Aqui temos um atalho: no python, podemos usar uma tupla para atribuir vários valores de uma vez''')
+v = ('a', 2, True)
+(x, y, z) = v
+print(x)
+print(y)
+print(z)
