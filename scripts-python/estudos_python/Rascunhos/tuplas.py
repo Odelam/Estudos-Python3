@@ -1,23 +1,24 @@
-minha_tupla = {3, 6, 2, "gato", 4.5, False}
-minha_tupla_2 = {4, 7, 2, "cão", 5.5, True}
-print(minha_tupla)
-print(minha_tupla_2)
-print('gato' in minha_tupla)
-print("Retorna um novo conjunto com todos os elementos de ambos os conjuntos", minha_tupla | minha_tupla_2)
-print("Retorna um novo conjunto com apenas os elementos comuns a ambos", minha_tupla & minha_tupla_2)
-print("Retorna um novo conjunto com todos os itens do primeiro conjunto, não do segundo", minha_tupla - minha_tupla_2)
-print("Retorna um novo conjunto com todos os itens do primeiro conjunto, não do segundo", minha_tupla_2 - minha_tupla)
-print("Pergunta se todos os elementos do primeiro conjunto estão no segundo", minha_tupla <= minha_tupla_2)
-print("Retorna um novo conjunto com todos os elementos de ambos os conjuntos", minha_tupla.union(minha_tupla_2))
-print("Retorna um novo conjunto com apenas os elementos comuns a ambos os conjuntos", minha_tupla.intersection(minha_tupla_2))
-print("Retorna um novo conjunto com todos os itens do primeiro conjunto, não no segundo", minha_tupla.difference(minha_tupla_2))
-print("Pergunta se todos os elementos de um conjunto estão no outro", minha_tupla.issubset(minha_tupla_2))
-minha_tupla.add("trovão")
-print("Adiciona um item ao conjunto", minha_tupla)
-minha_tupla.remove("gato")
-print("Remove item do conjunto", minha_tupla)
-print("Remove e retorna pra gente o último item do conjunto", minha_tupla.pop())
-print(minha_tupla)
-minha_tupla.clear()
-print("Remove todos os itens do conjunto", minha_tupla)
+print("Tuplas!")
+uma_tupla = ('a', 'b', 'pelegrino', 'z', 'exemplo')
+print(uma_tupla)
+print(uma_tupla[0])
+print(uma_tupla[-1])
+print(uma_tupla[1:3])
+print("Uma tupla é definida da mesma maneira que uma lista, exceto que todo o conjunto de elementos é colocado ebtre "
+      "parênteses em vez de colchetes.")
+print(''' Os elementos de uma tupla tem uma ordem definida, assim como uma lista. Os índices de tupla são baseados em zero, assim como uma lista, então
+o primeiro elemento de uma tupla não vazia é sempre uma_tupla[0].
+índices negativos contam a partir do final da tupla, assim como uma lista.
+fatiar também funciona, como uma lista. Quando você fatia uma lista, obtém uma nova lista; quando você corta uma tupla, obtém uma nova tupla.''')
+print("Importante!")
+print('''Você não pode adicionar elementos a uma tupla. Tuplas não tem os métodos append() ou extend().
+ Não podemos remover elementos de uma tupla. Tuplas não tem os métodos remove() ou pop().
+ Podemos encontrar elementos em uma tupla, pois isso não altera a tupla.
+ Podemos também usar o operador in para verificar se um elemento existe na tupla''')
+encontrou = 'a' in uma_tupla
+print(encontrou)
+print('''Para que serve as Tuplas?
+Tuplas são mais rápidas que listas. Se você está definindo um conjunto constante de valores e tudo o que vai fazer com ele é iterar por ele, use
+uma tupla em vez de lista.
+Isso torna seu código mais seguro se você "proteger contra gravação" os dados que não precisam ser alterados.''')
 
