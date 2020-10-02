@@ -46,4 +46,3 @@ def imprime_vogal(palavra_escolhida):
 
 
 imprime_vogal("macaco")
-Odelam Sá Dias de Souza.
