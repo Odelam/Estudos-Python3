@@ -20,14 +20,14 @@ def jogar_forca():
         else:
             tentativas += 1
 
-        enforcou = tentativas == 6
+        enforcou = tentativas == 7
         acertou = "_" not in letras_acertadas
         print(letras_acertadas)
 
     if acertou:
         imprime_msg_vencedor()
     else:
-        imprime_msg_perdedor()
+        imprime_msg_perdedor(palavra_secreta)
 
 
 def imprime_msg_abertura():
@@ -70,12 +70,88 @@ def guarda_chute_correto(palavra_secreta, chute, letras_acertadas):
 
 
 def imprime_msg_vencedor():
-    print("Você venceu!")
-    print()
+    print("Parabéns, você ganhou!")
+    print("       ___________      ")
+    print("      '._==_==_=_.'     ")
+    print("      .-\\:      /-.    ")
+    print("     | (|:.     |) |    ")
+    print("      '-|:.     |-'     ")
+    print("        \\::.    /      ")
+    print("         '::. .'        ")
+    print("           ) (          ")
+    print("         _.' '._        ")
+    print("        '-------'       ")
 
 
-def imprime_msg_perdedor():
-    print("Você perdeu!")
+def imprime_msg_perdedor(palavra_secreta):
+    print("Puxa, você foi enforcado!")
+    print(f"A palavra era {palavra_secreta}.")
+    print("    _______________         ")
+    print("   /               \       ")
+    print("  /                 \      ")
+    print("//                   \/\  ")
+    print("\|   XXXX     XXXX   | /   ")
+    print(" |   XXXX     XXXX   |/     ")
+    print(" |   XXX       XXX   |      ")
+    print(" |                   |      ")
+    print(" \__      XXX      __/     ")
+    print("   |\     XXX     /|       ")
+    print("   | |           | |        ")
+    print("   | I I I I I I I |        ")
+    print("   |  I I I I I I  |        ")
+    print("   \_             _/       ")
+    print("     \_         _/         ")
+    print("       \_______/           ")
+
+
+def desenha_forca(tentativas):
+    print("  _______     ")
+    print(" |/      |    ")
+
+    if tentativas == 1:
+        print(" |      (_)   ")
+        print(" |            ")
+        print(" |            ")
+        print(" |            ")
+
+    if tentativas == 2:
+        print(" |      (_)   ")
+        print(" |      \     ")
+        print(" |            ")
+        print(" |            ")
+
+    if tentativas == 3:
+        print(" |      (_)   ")
+        print(" |      \|    ")
+        print(" |            ")
+        print(" |            ")
+
+    if tentativas == 4:
+        print(" |      (_)   ")
+        print(" |      \|/   ")
+        print(" |            ")
+        print(" |            ")
+
+    if tentativas == 5:
+        print(" |      (_)   ")
+        print(" |      \|/   ")
+        print(" |       |    ")
+        print(" |            ")
+
+    if tentativas == 6:
+        print(" |      (_)   ")
+        print(" |      \|/   ")
+        print(" |       |    ")
+        print(" |      /     ")
+
+    if tentativas == 7:
+        print(" |      (_)   ")
+        print(" |      \|/   ")
+        print(" |       |    ")
+        print(" |      / \   ")
+
+    print(" |            ")
+    print("_|___         ")
     print()
 
 
