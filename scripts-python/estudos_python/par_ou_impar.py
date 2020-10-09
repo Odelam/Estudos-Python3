@@ -5,7 +5,6 @@ print("Vamos jogar par ou ímpar")
 print("=*=" * 20)
 
 vitorias_seguidas = 0
-empates = 0
 
 while True:
     par_ou_impar = ' '
@@ -22,10 +21,6 @@ while True:
             print("Você venceu!")
             vitorias_seguidas += 1
 
-        elif resultado % 2 == 0 and jogada_maquina % 2 == 0 and jogada_usuario % 2 == 0:
-            print("Empate!")
-            empates += 1
-
         else:
             print(f"Você jogou {jogada_usuario} e a máquina {jogada_maquina}.")
             print(f"Total de {resultado} deu ÍMPAR.")
@@ -39,14 +34,12 @@ while True:
             print("Você venceu!")
             vitorias_seguidas += 1
 
-        elif resultado % 2 == 1 and jogada_maquina % 2 == 1 and jogada_usuario % 2 == 1:
-            print("Empate!")
-            empates += 1
-
         else:
             print(f"Você jogou {jogada_usuario} e a máquina {jogada_maquina}.")
             print(f"Total de {resultado} deu PAR.")
             print("Você perdeu!")
             break
+    print("Vamos jogar novamente...")
+
 print(f"Total de vitórias consecutivas: {vitorias_seguidas}.")
 print(f"Total de empates: {empates}.")
