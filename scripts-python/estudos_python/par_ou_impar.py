@@ -42,4 +42,3 @@ while True:
     print("Vamos jogar novamente...")
 
 print(f"Total de vitórias consecutivas: {vitorias_seguidas}.")
-print(f"Total de empates: {empates}.")
