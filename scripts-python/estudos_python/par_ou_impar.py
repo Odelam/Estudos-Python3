@@ -8,8 +8,11 @@ vitorias_seguidas = 0
 empates = 0
 
 while True:
+    par_ou_impar = ' '
+    while par_ou_impar not in 'PI':
+        par_ou_impar = str(input("Par ou Ímpar? [P/I] ")).upper().strip()[0]
+
     jogada_maquina = random.randint(0, 10)
-    par_ou_impar = str(input("Par ou Ímpar? [P/I] ")).upper().strip()
     jogada_usuario = int(input("Digite um valor: "))
     resultado = jogada_usuario + jogada_maquina
     if par_ou_impar == 'P':
