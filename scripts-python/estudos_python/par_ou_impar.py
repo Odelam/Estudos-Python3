@@ -11,8 +11,8 @@ while True:
     jogada_maquina = random.randint(0, 11)
     par_ou_impar = str(input("Par ou Ímpar? [P/I] ")).upper().strip()
     jogada_usuario = int(input("Digite um valor: "))
+    resultado = jogada_usuario + jogada_maquina
     if par_ou_impar == 'P':
-        resultado = jogada_usuario + jogada_maquina
         if resultado % 2 == 0:
             print(f"Você jogou {jogada_usuario} e a máquina {jogada_maquina}.")
             print(f"Total de {resultado} deu PAR.")
@@ -30,7 +30,6 @@ while True:
             break
 
     if par_ou_impar == 'I':
-        resultado = jogada_usuario + jogada_maquina
         if resultado % 2 == 1:
             print(f"Você jogou {jogada_usuario} e a máquina {jogada_maquina}.")
             print(f"Total de {resultado} deu ÍMPAR.")
