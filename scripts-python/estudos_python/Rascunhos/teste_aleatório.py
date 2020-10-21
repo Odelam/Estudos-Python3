@@ -47,14 +47,14 @@ import statistics
 #
 # imprime_vogal("macaco")
 
-def mutabilidade(lista):
-    lista[0] = 5
-    return lista
-
-
-minha_lista = [3, 6, 9, 12]
-print(mutabilidade(minha_lista))
-print(minha_lista)
+# def mutabilidade(lista):
+#     lista[0] = 5
+#     return lista
+#
+#
+# minha_lista = [3, 6, 9, 12]
+# print(mutabilidade(minha_lista))
+# print(minha_lista)
 
 # def mutabilidade(x):
 #     x = 5
@@ -64,3 +64,6 @@ print(minha_lista)
 # print(mutabilidade(a))
 # print(a)
 #
+time = ['a', 'b', 'c', 'd', 'e']
+time.reverse()
+print(time)
