@@ -36,13 +36,31 @@ import statistics
 #             lista_letra.append(letra)
 # print(lista_letra)
 
-def imprime_vogal(palavra_escolhida):
-    lista_letra = []
-    for palavra in palavra_escolhida:
-        for letra in palavra:
-            if letra in 'aeiou':
-                lista_letra.append(letra)
-    print(lista_letra)
+# def imprime_vogal(palavra_escolhida):
+#     lista_letra = []
+#     for palavra in palavra_escolhida:
+#         for letra in palavra:
+#             if letra in 'aeiou':
+#                 lista_letra.append(letra)
+#     print(lista_letra)
+#
+#
+# imprime_vogal("macaco")
+
+def mutabilidade(lista):
+    lista[0] = 5
+    return lista
 
 
-imprime_vogal("macaco")
+minha_lista = [3, 6, 9, 12]
+print(mutabilidade(minha_lista))
+print(minha_lista)
+
+# def mutabilidade(x):
+#     x = 5
+#     return x
+#
+# a = 3
+# print(mutabilidade(a))
+# print(a)
+#
