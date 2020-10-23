@@ -1,3 +1,5 @@
+import time
+
 def finobacci_recursao(n):
     if n < 2:
         return n
@@ -14,5 +16,13 @@ def finobacci_iteracao(n):
     return resultado
 
 
-print('Recursão', finobacci_recursao(6))
-print('Iteração', finobacci_iteracao(6))
+n = 35
+
+start = time.time()
+print(finobacci_recursao(n))
+print(f"Função recursiva, tempo de execusão: {time.time() - start} segundos") # 3.264035224914551
+print()
+
+start = time.time()
+print(finobacci_iteracao(n))
+print(f"Função iteração, tempo de execusão: {time.time() - start} segundos") # 6.222724914550781e-05
